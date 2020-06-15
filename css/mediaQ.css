@@ -1,0 +1,23 @@
+@media screen and (max-width: 451px){
+  #searchBar{
+    width: 165px;
+  }#inlnBlck{
+    padding-left: 10px;
+  }
+  .col-xs-10{
+    padding: 0;
+  }.col-xs-2{
+    padding: 0;
+  }
+  #formContainer{
+    width: 100%;
+  }
+}
+@media screen and (min-width: 452px) and (max-width: 768px){
+  #searchBar{
+    width: 300px;
+  }
+  #formContainer{
+    width: 50%;
+  }
+}

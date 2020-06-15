@@ -1,0 +1,130 @@
+body{
+  font-family: sans-serif;
+}header{
+  border-bottom: 1px solid #f2f2f2;
+}#stickyFooter{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+/* ===== Index ===== */
+.nopdng{
+  padding: 0;
+}#menu{
+  cursor: pointer;
+}.mrgnLft{
+  margin-left: 10px;
+}#shpngLogo{
+  font-size: 15px;
+}#inlnBlck{
+  text-align: center;
+}#searchBar{
+  width: 550px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0px 0px 4px;
+  padding: 4px;
+}#searchBtn{
+  border: 1px solid #ccc;
+  background: #f2f2f2;
+  padding: 4px 10px;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  transition: all .2s;
+}#searchBtn:hover{
+  background: #ccc;
+  cursor: pointer;
+}#shoppingBasketContainer{
+  margin-top: 4px;
+}#menuContent{
+  padding: 0;
+  width: 600px;
+  margin: 30px auto;
+  position: absolute;
+  z-index: 9999;
+  margin-top: 40px;
+  background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+}#menuContent > div{
+  padding-left: 25px;
+  padding-top: 10px;
+}#menuContent > ul{
+  list-style: none;
+  padding: 0;
+}.none{
+  display: none;
+}.navLiA{
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0 10px 25px;
+  color: #4d4d4d;
+  transition: all 250ms ease;
+}.navLiA:hover{
+  background: #e6e6e6;
+  text-decoration: none;
+  color: #000;
+}#closeBurgerMenu{
+  float: right;
+  margin-right: 10px;
+}#bgBurgerMenu{
+  opacity: .5;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000;
+}#closeBurgerMenu:hover{
+  cursor: pointer;
+}
+.wth{
+  width: 100%;
+}
+
+#article{
+  margin-top: 30px;
+  font-weight: 900;
+  font-size: 20px;
+}
+.articleGrid{
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}.articleGrid > li {
+  display: inline-block;
+  margin: 5px;
+  border: 1px solid #fff;
+  transition: all 500ms ease;
+}.articleGrid > li:hover{
+  border: 1px solid #4d4d4d;
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
+}
+footer{
+  padding: 5px;
+  background: #404040;
+  color: #fff;
+}
+/* ===================== */
+
+/* ===== Register / Login ===== */
+#formContainer{
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding:20px;
+  text-align: center;
+  border: 1px solid #737373;
+  border-radius:4px;
+}.fields{
+  border: none;
+  border-bottom: 1px solid #000000;
+  padding: 15px 0 0 0;
+  transition: all 250ms;
+}.fields:focus{
+  border-bottom: 1px solid #f2f2f2;
+}.fieldMrgn{
+  margin-top: 10px;
+}
+/* ================================ */

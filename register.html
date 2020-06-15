@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Register</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/mediaQ.css">
+    <script src="js/jquery-3-4-1.js" async></script>
+    <script src="js/master.js" async></script>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid nopdng">
+        <div>
+          <span class="col-lg-2 col-md-3 col-sm-3 col-xs-12"><img id="menu" class="mrgnLft" src="img/icon/open_menu.png" alt="open menu"><span id="shpngLogo" class="mrgnLft"><a href="index.html">Shopping</a></span></span>
+          <form id="inlnBlck" class="col-lg-9 col-md-8 col-sm-7 col-xs-10">
+            <input id="searchBar" type="search" name="search bar" placeholder="Search..."><button id="searchBtn" type="submit" name="button">Go!</button>
+          </form><span id="shoppingBasketContainer" class="col-lg-1 col-md-1 col-sm-2 col-xs-2"><img src="img/icon/basket.png" alt="shopping basket" style="vertical-align: sub;"><span>0</span></span>
+        </div>
+        <div id="menuContent" class="col-lg-12 none">
+          <div>
+            <span><a href="register.html">Register</a></span><span> / </span><span><a href="login.html">Login</a></span><span id="closeBurgerMenu"><img src="img/icon/close.png" alt="close"></span>
+          </div>
+          <ul>
+            <li><a class="navLiA" href="#">Section 1</a></li><li><a class="navLiA" href="#">Section 2</a></li><li><a class="navLiA" href="#">Section 3</a></li><li><a class="navLiA" href="#">Section 4</a></li><li><a class="navLiA" href="#">Section 5</a></li>
+          </ul>
+        </div>
+        <div id="bgBurgerMenu" class="none"></div>
+      </div>
+    </header>
+    <div class="container">
+      <form id="formContainer" action="index.html" method="post">
+        <h1>Register:</h1>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><input class="fields" type="email" name="eml" placeholder="Email" required></div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><input class="fields" type="text" name="usrnm" placeholder="Username (6+ characters)" required></div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><input class="fields" type="password" name="pwd" placeholder="Password (6+ characters)" required></div>
+        <div><button class="btn btn-success fieldMrgn" type="submit" name="btnRgister">Register</button></div>
+        <div class="fieldMrgn">Already an account! <a href="login.html">Login</a></div>
+      </form>
+    </div>
+    <footer id="stickyFooter" class="container-fluid">
+      <div class="text-center">© Shopping</div>
+    </footer>
+  </body>
+</html>
