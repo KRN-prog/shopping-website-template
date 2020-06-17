@@ -23,5 +23,42 @@ window.onload = function() {
       bgMenuBurger.classList.add('none');
     }
   });
+  /* ==================== */
+  if (document.getElementById('desc')) {
+    var descArticle = document.getElementById('desc');
+    var descTxtArticle = document.getElementById('descTxt');
+    var moreInfoArticle = document.getElementById('moreInfo');
+    var moreInfoTxtArticle = document.getElementById('moreInfoTxt');
+    moreInfoTxtArticle.classList.add('none');
+    moreInfoArticle.addEventListener('click', function() {
+      descTxtArticle.classList.add('none');
+      moreInfoTxtArticle.classList.remove('none');
+      descArticle.classList.remove('activeInfo');
+      moreInfoArticle.classList.add('activeInfo');
+    });
+    descArticle.addEventListener('click', function() {
+      moreInfoTxtArticle.classList.add('none');
+      descTxtArticle.classList.remove('none');
+      moreInfoArticle.classList.remove('activeInfo');
+      descArticle.classList.add('activeInfo');
+    });
+
+    $('.multi-item-carousel').carousel({
+      interval: false
+    });
+
+    $('.multi-item-carousel .item').each(function(){
+      var next = $(this).next();
+      if (!next.length) {
+        next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+
+      if (next.next().length>0) {
+        next.next().children(':first-child').clone().appendTo($(this));
+      } else {
+      	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+      }
+    });
+  }
 }
-/* ==================== */
