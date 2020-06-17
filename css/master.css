@@ -17,13 +17,13 @@ body{
   margin-left: 10px;
 }#shpngLogo{
   font-size: 15px;
-}#inlnBlck{
-  text-align: center;
+}.inlnBlck{
+  display: inline-block;
 }#searchBar{
   width: 550px;
   margin-top: 4px;
   border: 1px solid #ccc;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 2px 0px 0px 2px;
   padding: 4px;
 }#searchBtn{
   border: 1px solid #ccc;
@@ -37,6 +37,8 @@ body{
   cursor: pointer;
 }#shoppingBasketContainer{
   margin-top: 4px;
+}#shoppingBasketImg{
+  vertical-align: sub;
 }#menuContent{
   padding: 0;
   width: 600px;
@@ -81,7 +83,24 @@ body{
 .wth{
   width: 100%;
 }
-
+#leftChevron{
+  left: 50%;
+  margin-left: -10px;
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  margin-top: -10px;
+}
+#rightChevron{
+  right: 50%;
+  margin-right: -10px;
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  margin-top: -10px;
+}
 #article{
   margin-top: 30px;
   font-weight: 900;
@@ -128,3 +147,59 @@ footer{
   margin-top: 10px;
 }
 /* ================================ */
+
+/* ===== Article ===== */
+#topArticle{
+  margin-top: 10px;
+}#ulArticle{
+  padding: 0;
+  float: left;
+}#ulArticle > li{
+  list-style: none;
+}.previewImgArticle{
+  margin-right: 10px;
+  border: 1px solid #ffffff;
+}.mainImgArticle{
+  vertical-align: text-top;
+  float: left;
+  margin: 0 10px 0 0;
+}#productName{
+  margin: 10px;
+  font-size: 25px;
+}#sizeEtc{
+  margin-right: 10px;
+}#selectArticle{
+  border: 1px solid #4d4d4d;
+  border-radius: 2px;
+}#InfoArticle{
+  margin: 10px;
+}#desc{
+  cursor: pointer;
+}.activeInfo{
+  font-weight: 800;
+}#moreInfo{
+  margin: 10px;
+  cursor: pointer;
+}#btnAddToCart{
+  margin-top: 50px; 
+}#pdngCarousel{
+  padding: 0 0 10px 0;
+}.pdngZ{
+  padding: 0;
+}
+/* =================== */
+
+/* ===== Cart ===== */
+.articleInCart{
+  margin-top: 25px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}.imgArticleInCart{
+  margin: 0 15px 2px 10px;
+  vertical-align: text-top;
+}.nameArticleInCart{
+  margin-top: 10px;
+  width: 80%;
+  line-break: anywhere;
+}
+/* ================ */
