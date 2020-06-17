@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Shopping cart</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/mediaQ.css">
+    <script src="js/jquery-3-4-1.js" async></script>
+    <script src="js/master.js" async></script>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid nopdng">
+        <div>
+          <span class="col-lg-2 col-md-3 col-sm-3 col-xs-12"><img id="menu" class="mrgnLft" src="img/icon/open_menu.png" alt="open menu"><span id="shpngLogo" class="mrgnLft"><a href="index.html">Shopping</a></span></span>
+          <form class="col-lg-9 col-md-8 col-sm-7 col-xs-10 text-center">
+            <input id="searchBar" type="search" name="search bar" placeholder="Search..."><button id="searchBtn" type="submit" name="button">Go!</button>
+          </form><span id="shoppingBasketContainer" class="col-lg-1 col-md-1 col-sm-2 col-xs-2"><a href="cart.html"><img id="shoppingBasketImg" src="img/icon/basket.png" alt="shopping basket"><span>0</span></a></span>
+        </div>
+        <div id="menuContent" class="col-lg-12 none">
+          <div>
+            <span><a href="register.html">Register</a></span><span> / </span><span><a href="login.html">Login</a></span><span id="closeBurgerMenu"><img src="img/icon/close.png" alt="close"></span>
+          </div>
+          <ul>
+            <li><a class="navLiA" href="#">Section 1</a></li><li><a class="navLiA" href="#">Section 2</a></li><li><a class="navLiA" href="#">Section 3</a></li><li><a class="navLiA" href="#">Section 4</a></li><li><a class="navLiA" href="#">Section 5</a></li>
+          </ul>
+        </div>
+        <div id="bgBurgerMenu" class="none"></div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="articleInCart">
+        <div class="inlnBlck imgCartContainer">
+          <img class="inlnBlck imgArticleInCart" src="img/articleIMG/article2.png" alt="2" width="150" height="150">
+        </div><div class="inlnBlck nameArticleInCart">Nom du produit</div>
+        <div style="margin-left: 10px;font-size: 10px;color: #009933;">En stock</div>
+        <div class="inlnBlck" style="margin-left: 10px;font-size: 10px;"><a href="#">Supprimer</a></div>
+        <div class="inlnBlck" style="margin-left: 10px;font-size: 10px;"><select name="quantityArticle" style="border: 1px solid #ccc; border-radius: 2px; padding: 2px; margin-bottom: 10px;"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div>
+      </div>
+      <div style="margin-top: 10px; border: 1px solid #4d4d4d;"></div>
+      <div style="text-align: right; margin: 5px;">
+        <span style="margin: 5px;">Prix:</span><span style="font-size: 20px;">30£</span>
+        <div>
+          <button class="btn btn-success" type="button" name="btnCommand">Commander</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
