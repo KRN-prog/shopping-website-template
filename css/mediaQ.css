@@ -21,3 +21,11 @@
     width: 50%;
   }
 }
+@media screen and (min-width: 769px) and (max-width: 991px){
+  #searchBar{
+    width: 300px;
+  }
+  #formContainer{
+    width: 50%;
+  }
+}
