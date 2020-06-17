@@ -24,7 +24,42 @@ window.onload = function() {
     }
   });
   /* ==================== */
-  if (document.getElementById('desc')) {
+  if (document.getElementById('topArticle')) {
+    var ActualPreviewImg = document.getElementById('ActualPreviewImg');
+    if (document.getElementById('previewImg1')) {
+      var previewImg1 = document.getElementById('previewImg1');
+      previewImg1.addEventListener('click', function() {
+        ActualPreviewImg.setAttribute("src", "img/articleIMG/article1.png");
+        if (document.getElementById('previewImg2') && document.getElementById('previewImg3')) {
+          previewImg2.classList.remove('borderActualArticleView');
+          previewImg3.classList.remove('borderActualArticleView');
+        }else if (document.getElementById('previewImg2')) {
+          previewImg2.classList.remove('borderActualArticleView');
+        }else{}
+        previewImg1.classList.add('borderActualArticleView');
+      });
+      if (document.getElementById('previewImg2')) {
+        var previewImg2 = document.getElementById('previewImg2');
+        previewImg2.addEventListener('click', function() {
+          ActualPreviewImg.setAttribute("src", "img/articleIMG/article3.png");
+          if (document.getElementById('previewImg3')) {
+            previewImg3.classList.remove('borderActualArticleView');
+          }
+          previewImg1.classList.remove('borderActualArticleView');
+          previewImg2.classList.add('borderActualArticleView');
+        });
+        if (document.getElementById('previewImg3')) {
+          var previewImg3 = document.getElementById('previewImg3');
+          previewImg3.addEventListener('click', function() {
+            ActualPreviewImg.setAttribute("src", "img/articleIMG/article4.png");
+            previewImg1.classList.remove('borderActualArticleView');
+            previewImg2.classList.remove('borderActualArticleView');
+            previewImg3.classList.add('borderActualArticleView');
+          });
+        }
+      }
+    }else{}
+    console.log(ActualPreviewImg.alt);
     var descArticle = document.getElementById('desc');
     var descTxtArticle = document.getElementById('descTxt');
     var moreInfoArticle = document.getElementById('moreInfo');
