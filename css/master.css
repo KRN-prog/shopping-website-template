@@ -37,6 +37,8 @@ body{
   cursor: pointer;
 }#shoppingBasketContainer{
   margin-top: 4px;
+}#shoppingBasketRedirect:hover{
+  text-decoration: none;
 }#shoppingBasketImg{
   vertical-align: sub;
 }#menuContent{
@@ -159,6 +161,8 @@ footer{
 }.previewImgArticle{
   margin-right: 10px;
   border: 1px solid #ffffff;
+}.previewImgArticle:hover{
+  cursor: pointer;
 }.mainImgArticle{
   vertical-align: text-top;
   float: left;
@@ -181,11 +185,13 @@ footer{
   margin: 10px;
   cursor: pointer;
 }#btnAddToCart{
-  margin-top: 50px; 
+  margin-top: 50px;
 }#pdngCarousel{
   padding: 0 0 10px 0;
 }.pdngZ{
   padding: 0;
+}.borderActualArticleView{
+  border: 1px solid #3366ff;
 }
 /* =================== */
 
